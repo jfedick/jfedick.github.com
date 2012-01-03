@@ -1,700 +1,107 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<title>[title goes here]</title>
-	<link rel="icon" href="http://29.media.tumblr.com/avatar_3e560a07cec1_16.png"/>
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.justinfedick.com/rss"/>
-	<meta name="description" content="Ideas and experiences from my life as a developer" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=775"/>
-
-	<meta name="text:Disqus Shortname" content="" />
-
-<link rel="stylesheet" href="http://static.tumblr.com/xcxngn2/Gr0lm7i86/style.css" type="text/css" media="screen" />
-
-<style type="text/css" media="screen">
-	.post .content { 
-  width:412px; 
-  padding:30px;
-  border-radius:15px;
-}
-.gist { 
-  margin-top:20px;
-}
-h2.description { padding-top:20px; font-weight:normal;
-}
-#header {
-  padding-bottom: 40px;
-}
-h2.subtitle {
-  font-size: 18px;
-  padding-bottom: 12px;
-}
-</style>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28064090-1']);
-  _gaq.push(['_setDomainName', 'justinfedick.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
-<body>
-<div class="noise">
-	<div id="container">
-		<div id="header">
-			<h1><a href="/">[title goes here]</a></h1>
-            <h2 class="description">Ideas and experiences from my life as a developer</h2>
-			<ul id="nav">
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/blog">About Me</a></li>
-			</ul>
-		</div>
-		<a name="contents"></a>
-		<div id="contents">
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>3rd January 2012</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/15243824069/things-ive-learned-in-ruby-on-rails-1">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYyECcal5" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                        <a href="http://blog.justinfedick.com/tagged/Things-I%27ve-Learned">Things I&#039;ve Learned </a>
-                                
-                                        <a href="http://blog.justinfedick.com/tagged/Ruby-on-Rails">Ruby on Rails </a>
-                                
-                                </p>	
-
-				
-				
-				
-
-				
-
-				
-					</div>
-					<div class="content link">
-                                                <div class="link-post">
-                                                  <a href="http://blog.justinfedick.com/post/15243824069/things-ive-learned-in-ruby-on-rails-1">A LINK</a>
-                                                </div>   
-						<h3><a href="http://guides.rubyonrails.org/migrations.html#using-models-in-your-migrations" class="link" >Things I&#039;ve Learned in Ruby on Rails #1</a></h3>
-						
-							<div class="description"><p><h2 class="subtitle">You can override models in migrations.</h2>
-<p>Today, I was working with a default_scope that would aggregate rows of data based on a particular field (this field was added using a migration before the default_scope had been implemented). This worked fine until someone else had to grab my code. When they tried to run the migration (to add the field), it failed because the field didn&#8217;t exist yet (even though the migration was originally run to create that field). It&#8217;s sort of a chicken-and-egg problem. To fix it, I needed to override the classes that were accessed in the migrations to remove the default scope. I reloaded the database and found that, if you migrated from scratch, there were several migrations that needed the class overloading. Once this was fixed everything worked fine. I just need to remember to override a migration whenever I create a new one that does not use the default_scope.</p>
-<script src="https://gist.github.com/1556072.js"> </script></p></div>
-						
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-					
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>29th December 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/14976130371/rails-app-idea">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYyDyfPr3" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-					</div>
-					<div class="content text">
-                                            <div class="text-post">
-                                               <a href="http://blog.justinfedick.com/post/14976130371/rails-app-idea">A TEXT POST</a>
-                                            </div>
-						<h3><a href="http://blog.justinfedick.com/post/14976130371/rails-app-idea">Rails app idea</a></h3>
-						<div class="go">
-							<p>I think a decent rails app would be to turn Ruby Koans into a website that allows users to learn the language interactively without having to install everything. (I&#8217;m thinking that I would love to use this with the iPad and a bluetooth keyboard)</p>
-						</div>
-                                                
-                                                
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>13th June 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/6505628860/gps-idea">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy63n0Iy" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-					</div>
-					<div class="content text">
-                                            <div class="text-post">
-                                               <a href="http://blog.justinfedick.com/post/6505628860/gps-idea">A TEXT POST</a>
-                                            </div>
-						<h3><a href="http://blog.justinfedick.com/post/6505628860/gps-idea">Gps idea</a></h3>
-						<div class="go">
-							<p>Open source GPS. Community driven software- social media integration (four square), reviews of points of interest. Maps could be user edited- like Wikipedia on the spot.</p>
-						</div>
-                                                
-                                                
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>31st May 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/6047593527">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy5eTlGt" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-					</div>
-					<div class="content audio">
-                                           <div class="audio-post">
-                                             <a href="http://blog.justinfedick.com/post/6047593527">A TUNE</a>
-                                           </div> 
-                                              
-
-						<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?707"></script><span id="audio_player_6047593527">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash 9</a> is required to listen to audio.]</span><script type="text/javascript">replaceIfFlash(9,"audio_player_6047593527",'\x3cdiv class=\x22audio_player\x22\x3e<embed type="application/x-shockwave-flash" src="http://assets.tumblr.com/swf/audio_player.swf?audio_file=http://www.tumblr.com/audio_file/6047593527/tumblr_lm2wnjURXK1qzcuwy&color=E4E4E4" height="27" width="207" quality="best" wmode="opaque"></embed>\x3c/div\x3e')</script>
-						
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/6047491672">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy5eTMPO" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-					</div>
-					<div class="content audio">
-                                           <div class="audio-post">
-                                             <a href="http://blog.justinfedick.com/post/6047491672">A TUNE</a>
-                                           </div> 
-                                              
-
-						<span id="audio_player_6047491672">[<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank">Flash 9</a> is required to listen to audio.]</span><script type="text/javascript">replaceIfFlash(9,"audio_player_6047491672",'\x3cdiv class=\x22audio_player\x22\x3e<embed type="application/x-shockwave-flash" src="http://assets.tumblr.com/swf/audio_player.swf?audio_file=http://www.tumblr.com/audio_file/6047491672/tumblr_lm2wib2P5M1qzcuwy&color=E4E4E4" height="27" width="207" quality="best" wmode="opaque"></embed>\x3c/div\x3e')</script>
-						
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>30th March 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/4212696223/new-west-arete-workflow">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy3x6AIV" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-				
-				
-						
-					</div>
-					<div class="content image">
-                                           <div class="image-post">
-                                              <a href="http://blog.justinfedick.com/post/4212696223/new-west-arete-workflow">A PHOTO</a>
-                                           </div>
-						<a href="http://www.tumblr.com/photo/1280/4212696223/1/tumblr_livvgeIKhv1qzcuwy">
-<a href="http://30.media.tumblr.com/tumblr_livvgeIKhv1qzcuwyo1_500.png" rel="prettyPhoto">
-<span style="background: url(http://28.media.tumblr.com/tumblr_livvgeIKhv1qzcuwyo1_400.png) no-repeat center center;" class="image-wrap">
-<img class="image" src="http://28.media.tumblr.com/tumblr_livvgeIKhv1qzcuwyo1_400.png" />
-</span>
-</a>
-</a>
-						
-							<div class="description"><p>New West Arete workflow.</p></div>
-						
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>28th March 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/4160838331/city-taxi-app">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy3u0Lgx" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-					</div>
-					<div class="content text">
-                                            <div class="text-post">
-                                               <a href="http://blog.justinfedick.com/post/4160838331/city-taxi-app">A TEXT POST</a>
-                                            </div>
-						<h3><a href="http://blog.justinfedick.com/post/4160838331/city-taxi-app">City taxi app</a></h3>
-						<div class="go">
-							<p>A taxi company that only works through prepaid trips. When youre on a corner, you bring up the app, tell it where you want to go and checkout. Then a taxi driver is notified and picks you up. This cuts down on taxi overhead by prepaying, and not having to aimlessly drive around.</p>
-						</div>
-                                                
-                                                
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>26th March 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/4112597693/coupon-web-app">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy3r8KAz" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-					</div>
-					<div class="content text">
-                                            <div class="text-post">
-                                               <a href="http://blog.justinfedick.com/post/4112597693/coupon-web-app">A TEXT POST</a>
-                                            </div>
-						<h3><a href="http://blog.justinfedick.com/post/4112597693/coupon-web-app">Coupon web app</a></h3>
-						<div class="go">
-							<p>Create a web app that pairs coupons with charities. You can look up companies that have coupons to get free items (or close to free) and pairs them with charities who need those items.</p>
-						</div>
-                                                
-                                                
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>20th March 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/3995521499/site-idea">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy3k9j7R" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-					</div>
-					<div class="content text">
-                                            <div class="text-post">
-                                               <a href="http://blog.justinfedick.com/post/3995521499/site-idea">A TEXT POST</a>
-                                            </div>
-						<h3><a href="http://blog.justinfedick.com/post/3995521499/site-idea">Site idea</a></h3>
-						<div class="go">
-							<p>The past couple days, I&#8217;ve been creating a character to play in my buddy Ron&#8217;s RPG on RPOL.net. They have a pretty terrible character creation system, which is barely better than just sitting down and writing everything out on paper. I know I can come up with a site that does this stuff better. Especially character creation- that&#8217;s my idea. I could streamline character creation so that anyone can do it and you don&#8217;t have to read a ton of text to figure everything out.</p>
-<p>There would be a progress bar that would tell you how far you&#8217;ve progressed and how far until completion. Each step would have you fill out a certain part of your character. Some parts you could skip and come back to and some would need to be completed in order. This would allow flexibility for things you need to come back to. </p>
-<p>So it would look something like this. You start out by choosing your race or class (not sure the order) and then you pick the other one. From there, you roll the dice for your skill points and you assign them as you go. We could have tooltips that suggest what categories the skillpoints should go into based on the class you picked. After you assign your skillpoints, it would automatically fill in your modifiers and all of the other stats that are derived from them. Then you would have a final chance to look everything over before you submit. Once you submit, then your characters skillpoints are final. Then you go through a menu where you choose your abilities/talents/spells, which are populated based on your class/race. Finally, you either accept 70g to start with or you roll the dice. Then you have the option to create a character backstory or finish!</p>
-<p>Throughout the process, it will let you know what bonuses you get for certain classes or what extra skills get assigned to you for your decisions.</p>
-<p>You could then upload a picture of your character.</p>
-<p>I like mint.com&#8217;s (under profile) profile completion menu. Its slick.</p>
-<p>More ideas- at the end of the character creation, it could auto generate a character sheet for you to print out (if you want). </p>
-<p>I could make this editable for any online RPG or tabletop game.</p>
-						</div>
-                                                
-                                                
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="sidebar">
-	            <ul>
-	            
-				
-					<li class="date"><h2>1st March 2011</h2></li>
-				
-				
-				
-				
-				
-				
-				    
-                                
-                                
-                                <li class="permalink"><a href="http://blog.justinfedick.com/post/3595516449/iphone-app-idea">Permalink</a></li>
-                       
-    				
-			        <li class="tweet"><a href="http://twitter.com/home?status=http://tumblr.com/Zh0CYy3MJpeX" target="_blank">Tweet this</a></li>
-				</ul>
-                                
-                                <p class="tags">
-                                
-                                </p>	
-
-				
-					</div>
-					<div class="content text">
-                                            <div class="text-post">
-                                               <a href="http://blog.justinfedick.com/post/3595516449/iphone-app-idea">A TEXT POST</a>
-                                            </div>
-						<h3><a href="http://blog.justinfedick.com/post/3595516449/iphone-app-idea">iPhone app idea</a></h3>
-						<div class="go">
-							<p>An app that allows you to open a document and a text editor side by side on the screen so you can read and take notes. It would be top/bottom in portrait mode and left right in landscape mode.</p>
-						</div>
-                                                
-                                                
-
-				
-				
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				
-				
-
-				
-                
-				</div>
-			</div>
-			
-
-
-			
-
-			
-			<div class="post" style="margin-bottom: 40px;">
-                                <div class="sidebar">
-
-                                </div>
-				<div class="footer-nav clearfix" style="text-transform:lowercase;">
-					    
-   
-					
-						<a class="next-page" href="/page/2">Next &#187;</a>
-					
-				</div>
-			</div>
-			
-
-		</div>
-		<a name="description"></a>
-		<div id="footer" class="clearfix">
-
-			
-
-		</div>
-       </div>
-</div>
-
-<div class="footer-wrap">
-	<p class="footer">Atonement by <a href="http://www.madebylipsum.com">Toni Romero</a> Powered by <a href="http://www.tumblr.com/">Tumblr</a> / <a href="/archive">Archives</a> / <a href="http://blog.justinfedick.com/rss">Feed</a></p>
-</div>
-
-	
-<!-- BEGIN TUMBLR CODE --><iframe src="http://assets.tumblr.com/iframe.html?10&src=http%3A%2F%2Fblog.justinfedick.com%2F&amp;lang=en_US&amp;name=fedick" scrolling="no" width="330" height="25" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;" alt=""/></noscript><!-- END TUMBLR CODE --></body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>[title goes here]</title>
+    <link href='http://29.media.tumblr.com/avatar_3e560a07cec1_16.png' rel='icon' />
+    <link href='http://blog.justinfedick.com/rss' rel='alternate' title='RSS' type='application/rss+xml' />
+    <meta content='Ideas and experiences from my life as a developer' name='description' />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content='width=775' name='viewport' />
+    <meta content='' name='text:Disqus Shortname' />
+    <link href='http://static.tumblr.com/xcxngn2/Gr0lm7i86/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <style media='screen' type='text/css'>
+      .post .content {
+      width:auto;
+      padding:30px;
+      border-radius:15px;
+      margin-right:0;
+      }
+      .gist {
+      margin-top:20px;
+      }
+      h2.description { padding-top:20px; font-weight:normal;
+      }
+      #header {
+      padding-bottom: 40px;
+      }
+      h2.subtitle {
+      font-size: 18px;
+      padding-bottom: 12px;
+      }
+    </style>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28064090-1']);
+        _gaq.push(['_setDomainName', 'justinfedick.com']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+    <meta content='off' http-equiv='x-dns-prefetch-control' />
+  </head>
+  <body>
+    <div class='noise'>
+      <div id='container'>
+        <div id='header'>
+          <h1>
+            <a href='/'>[title goes here]</a>
+          </h1>
+          <h2 class='description'>Ideas and experiences from my life as a developer</h2>
+          <ul id='nav'>
+            <li>
+              <a href='http://blog.justinfedick.com'>Blog</a>
+              <a href='http://about.justinfedick.com'>About Me</a>
+            </li>
+          </ul>
+        </div>
+        <a name='contents'></a>
+        <div id='contents'>
+          <div class='post'>
+            <div class='content link'>
+              <h3>
+                <a class='link'>About Me</a>
+              </h3>
+              <div class='description'>
+                <p>
+                  <h2 class='subtitle'></h2>
+                  <p></p>
+                </p>
+              </div>
+            </div>
+          </div>
+        <a name='description'></a>
+        <div class='clearfix' id='footer'></div>
+      </div>
+    </div>
+    <div class='footer-wrap'>
+      <p class='footer'>
+        Atonement by
+        <a href='http://www.madebylipsum.com'>Toni Romero</a>
+        Powered by
+        <a href='http://www.tumblr.com/'>Tumblr</a>
+        /
+        <a href='/archive'>Archives</a>
+        /
+        <a href='http://blog.justinfedick.com/rss'>Feed</a>
+      </p>
+    </div>
+    <!-- BEGIN TUMBLR CODE -->
+    <iframe frameborder='0' height='25' id='tumblr_controls' scrolling='no' src='http://assets.tumblr.com/iframe.html?10&amp;src=http%3A%2F%2Fblog.justinfedick.com%2F&amp;lang=en_US&amp;name=fedick' style='position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;' width='330'></iframe>
+    <!--[if IE]> <script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script> <![endif]-->
+    <script type='text/javascript'>
+      //<![CDATA[
+        _qoptions={qacct:"p-19UtqE8ngoZbM"};    %script{:src => "http://edge.quantserve.com/quant.js", :type => "text/javascript"}
+      //]]>
+    </script>
+    <noscript>
+      <img alt='' src='http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif' style='display:none; border-width:0px; height:1px; width:1px;' />
+    </noscript>
+    <!-- END TUMBLR CODE -->
+  </body>
 </html>
